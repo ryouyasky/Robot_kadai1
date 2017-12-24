@@ -9,7 +9,6 @@ MODULE_AUTHOR("RYOUYA SAKAI");
 MODULE_DESCRIPTION("driver for LED control");
 MODULE_LICENSE("GPL");
 MODULE_VERSION("0.1");
-//ここまで前回
 
 static dev_t dev;
 static struct cdev cdv;
@@ -44,7 +43,7 @@ static int __init init_mod(void)
 		return retval;
 
 	}
-	//ここまで前回場所
+	//check
 	printk(KERN_INFO "%s is loaded. major:%d\n",__FILE__,MAJOR(dev));
 
 	cdev_init(&cdv, &led_fops);
@@ -54,7 +53,7 @@ static int __init init_mod(void)
 
 		return retval;
 	}
-//ここから追加
+//add
 	cls = class_create(THIS_MODULE,"myled");
 	if(IS_ERR(cls)){
 		printk(KERN_ERR "class_create failed.");
