@@ -1,11 +1,3 @@
-/**
-myled.c
-
-Copyright (c) 2017 RyouyaSakai
-
-This software is released under the MIT License.
-http://opensource.org/licenses/mit-license.php
-*/
 #include <linux/module.h>
 #include <linux/fs.h>
 #include <linux/cdev.h>
@@ -15,7 +7,7 @@ http://opensource.org/licenses/mit-license.php
 
 MODULE_AUTHOR("RYOUYA SAKAI");
 MODULE_DESCRIPTION("driver for LED control");
-MODULE_LICENSE("MIT");
+MODULE_LICENSE("GPL");
 MODULE_VERSION("0.1");
 
 static dev_t dev;
