@@ -15,7 +15,7 @@ http://opensource.org/licenses/mit-license.php
 
 MODULE_AUTHOR("RYOUYA SAKAI");
 MODULE_DESCRIPTION("driver for LED control");
-MODULE_LICENSE("GPL");
+MODULE_LICENSE("MIT");
 MODULE_VERSION("0.1");
 
 static dev_t dev;
