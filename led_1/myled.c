@@ -1,3 +1,11 @@
+/**
+myled.c
+
+Copyright (c) 2017 RyouyaSakai
+
+This software is released under the MIT License.
+http://opensource.org/licenses/mit-license.php
+*/
 #include <linux/module.h>
 #include <linux/fs.h>
 #include <linux/cdev.h>
